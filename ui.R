@@ -1,7 +1,9 @@
 library(shiny)
 library(dplyr)
 source("data.R")
+
 source("gapModule.R")
+
 
 ui <- fluidPage(
   tags$style(type="text/css", ".recalculating { opacity: 1.0; }"),
@@ -15,3 +17,4 @@ ui <- fluidPage(
               tabPanel("Oceania", gapModuleUI("oceania"))
   )
 )
+
